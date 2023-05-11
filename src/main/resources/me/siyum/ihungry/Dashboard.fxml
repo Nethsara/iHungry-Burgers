@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:id="pane" prefHeight="268.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.siyum.ihungry.controller.DashboardController">
+    <AnchorPane layoutX="409.0" prefHeight="282.0" prefWidth="375.0">
+        <JFXButton layoutX="67.0" layoutY="205.0" onAction="#viewOrderOnAction" prefHeight="26.0" prefWidth="279.0"
+                   style="-fx-border-color: black;" text="View Order"/>
+        <JFXButton layoutX="67.0" layoutY="156.0" onAction="#updateOrderOnAction" prefHeight="26.0" prefWidth="279.0"
+                   style="-fx-border-color: black;" text="Update Order"/>
+        <JFXButton layoutX="67.0" layoutY="51.0" onAction="#addCustomerOnAction" prefHeight="26.0" prefWidth="279.0"
+                   style="-fx-border-color: black;" text="Add Customer"/>
+        <JFXButton layoutX="67.0" layoutY="102.0" onAction="#placeOrderOnAction" prefHeight="26.0" prefWidth="279.0"
+                   style="-fx-border-color: black;" text="Place Oder"/>
+        <Label layoutX="256.0" layoutY="260.0" text="Software V 1.0.0"/>
+    </AnchorPane>
+    <ImageView fitHeight="282.0" fitWidth="424.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@assets/burger.jpg"/>
+    </ImageView>
+</AnchorPane>

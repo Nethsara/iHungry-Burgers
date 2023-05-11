@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.siyum.ihungry.controller.PlaceOrderController">
+    <TextField fx:id="txtCostID" layoutX="187.0" layoutY="38.0" onAction="#validateThePhoneNumber" prefHeight="26.0"
+               prefWidth="373.0"/>
+    <TextField fx:id="txtCustName" layoutX="187.0" layoutY="78.0" prefHeight="26.0" prefWidth="373.0"/>
+    <Separator layoutX="7.0" layoutY="125.0" prefHeight="0.0" prefWidth="593.0"/>
+    <TextField fx:id="txtBurgerQty" layoutX="187.0" layoutY="194.0" onAction="#calculatePrice" prefHeight="26.0"
+               prefWidth="373.0"/>
+    <TextField fx:id="txtBillValue" layoutX="187.0" layoutY="250.0" prefHeight="26.0" prefWidth="373.0"/>
+    <Label layoutX="69.0" layoutY="43.0" text="Customer ID"/>
+    <Label layoutX="69.0" layoutY="83.0" text="Customer Name"/>
+    <Label layoutX="69.0" layoutY="199.0" text="Burger Quantity"/>
+    <Label layoutX="71.0" layoutY="255.0" text="Bill Value"/>
+    <JFXButton fx:id="btnPlaceOrder" layoutX="283.0" layoutY="301.0" onAction="#placeOrderOnAction" prefHeight="28.0"
+               prefWidth="159.0" style="-fx-border-color: black;" text="Place Order"/>
+    <JFXButton layoutX="455.0" layoutY="301.0" onAction="#cancelOnAction" prefHeight="28.0" prefWidth="105.0"
+               style="-fx-border-color: black;" text="Cancel"/>
+    <JFXButton layoutX="283.0" layoutY="347.0" onAction="#returnToHomeOnAction" prefHeight="28.0" prefWidth="278.0"
+               style="-fx-border-color: black;" text="Return to home"/>
+    <Label layoutX="69.0" layoutY="140.0" text="Order ID"/>
+    <Label fx:id="txtOrderID" layoutX="121.0" layoutY="140.0" text="Order ID"/>
+</AnchorPane>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="402.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.siyum.ihungry.controller.ViewController">
+   <children>
+      <JFXButton layoutX="214.0" layoutY="55.0" onAction="#viewCustomers" prefHeight="26.0" prefWidth="186.0" style="-fx-border-color: black;" text="View Customers" />
+      <JFXButton layoutX="214.0" layoutY="121.0" onAction="#viewOrders" prefHeight="26.0" prefWidth="186.0" style="-fx-border-color: black;" text="View Orders" />
+      <JFXButton layoutX="214.0" layoutY="186.0" onAction="#viewOrder" prefHeight="26.0" prefWidth="186.0" style="-fx-border-color: black;" text="View Order" />
+      <JFXButton layoutX="407.0" layoutY="317.0" onAction="#returnHome" prefHeight="28.0" prefWidth="145.0" style="-fx-border-color: black;" text="Cancel" />
+   </children>
+</AnchorPane>

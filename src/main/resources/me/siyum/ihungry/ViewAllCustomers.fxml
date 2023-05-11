@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="522.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.siyum.ihungry.controller.ViewAllCustomersController">
+    <children>
+        <TableView fx:id="tbl" layoutX="24.0" layoutY="49.0" prefHeight="378.0" prefWidth="537.0">
+            <columns>
+                <TableColumn fx:id="colID" prefWidth="166.0" text="CustomerID" />
+                <TableColumn fx:id="colName" prefWidth="210.0" text="Name" />
+                <TableColumn fx:id="colTotal" prefWidth="160.0" text="Total Value" />
+            </columns>
+        </TableView>
+        <JFXButton layoutX="497.0" layoutY="461.0" onAction="#returnHome" text="Cancel" />
+    </children>
+</AnchorPane>

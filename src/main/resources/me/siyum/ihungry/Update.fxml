@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="450.0" prefWidth="449.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.siyum.ihungry.controller.UpdateController">
+   <Label layoutX="96.0" layoutY="51.0" text="Order ID" />
+   <ComboBox fx:id="cmbOID" layoutX="208.0" layoutY="47.0" onAction="#selectedOrder" prefHeight="26.0" prefWidth="160.0" />
+   <Label layoutX="96.0" layoutY="105.0" text="Customer ID" />
+   <TextField fx:id="txtCostID" disable="true" layoutX="208.0" layoutY="101.0" />
+   <Label layoutX="96.0" layoutY="156.0" text="Customer Name" />
+   <TextField fx:id="txtCostName" disable="true" layoutX="208.0" layoutY="152.0" />
+   <Label layoutX="96.0" layoutY="202.0" text="Burger Qty" />
+   <TextField fx:id="txtBQty" layoutX="208.0" layoutY="198.0" onAction="#calculateTotal" />
+   <Label layoutX="96.0" layoutY="247.0" text="Bill Value" />
+   <TextField fx:id="txtBillValue" disable="true" layoutX="208.0" layoutY="243.0" />
+   <Label layoutX="96.0" layoutY="298.0" text="Status" />
+   <ComboBox fx:id="cmbStatus" layoutX="208.0" layoutY="294.0" onAction="#statusChanged" prefHeight="26.0" prefWidth="160.0" />
+   <JFXButton disable="true" layoutX="162.0" layoutY="351.0" onAction="#updateOrder" prefHeight="28.0" prefWidth="102.0" style="-fx-border-color: black;" text="Update Order" />
+   <JFXButton layoutX="296.0" layoutY="351.0" onAction="#cancel" prefHeight="28.0" prefWidth="77.0" style="-fx-border-color: black;" text="Cancel" />
+   <JFXButton layoutX="162.0" layoutY="387.0" onAction="#returnHome" prefHeight="28.0" prefWidth="213.0" style="-fx-border-color: black;" text="Return Home" />
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.siyum.ihungry.controller.ViewOrderController">
+   <children>
+      <Label layoutX="98.0" layoutY="45.0" text="Order ID" />
+      <TextField fx:id="txtOID" layoutX="202.0" layoutY="41.0" onAction="#searchOrder" />
+      <Label layoutX="98.0" layoutY="114.0" text="Customer ID" />
+      <Label fx:id="txtCostID" layoutX="254.0" layoutY="114.0" text="Order ID" />
+      <Label layoutX="98.0" layoutY="145.0" text="Customer Name" />
+      <Label fx:id="txtCostName" layoutX="254.0" layoutY="145.0" text="Order ID" />
+      <Label layoutX="98.0" layoutY="176.0" text="Burger QTY" />
+      <Label fx:id="txtBurgerQTY" layoutX="254.0" layoutY="176.0" text="Order ID" />
+      <Label layoutX="98.0" layoutY="207.0" text="Total" />
+      <Label fx:id="txtTotal" layoutX="254.0" layoutY="207.0" text="Order ID" />
+      <Label layoutX="98.0" layoutY="239.0" text="Status" />
+      <Label fx:id="txtStatus" layoutX="254.0" layoutY="239.0" text="Order ID" />
+      <JFXButton layoutX="300.0" layoutY="304.0" onAction="#backToView" text="Back" />
+   </children>
+</AnchorPane>
